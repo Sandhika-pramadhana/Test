@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Latform.css">
+    <title>Latihan</title>
+</head>
+<body>
+    <h1>Form pendaftaran</h1>
+    <div class="container">
+    <fieldset>
+    <h1>Data diri</h1>
+    <form action="" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" pattern="[^@]+@[^\.]+\..+" required> <br><br>
+
+        <label for="alamat">Alamat:</label>
+        <textarea name="text" id="alamat" rows="4"></textarea><br><br>
+
+        <label for="number">Nomor telepon:</label>
+        <input type="tel" name="number" id="number" pattern="[0-9]+" required> <br><br>
+
+        <label for="tempat">Tempat lahir:</label>
+        <input type="text" name="tempat" id="tempat" required> <br><br> 
+
+        <label for="tanggal">Tanggal lahir:</label>
+        <input type="date" name="tanggal" id="tanggal" required> <br><br>
+       
+        <label for="Sekolah">Sekolah:</label>
+        <input type="text" name="Sekolah" id="Sekolah" required> <br><br>
+    </fieldset>
+    
+        <fieldset>
+            <legend>
+        <h2>Program studi</h2>
+            </legend>
+
+        <label for="program">Program Studi:</label>
+        <input type="checkbox" name="program" id="d3" value="D3">
+        <label for="program">D3</label>
+        <input type="checkbox" name="program" id="s1" value="S1">
+        <label for="s1">S1</label>
+        <input type="checkbox" name="program" id="s2" value="S2">
+        <label for="s2">S2</label><br><br>
+
+        <label for="jurusan">Jurusan</label>
+        <select name="jurusan" id="jurusan">
+            <option value=""></option>
+            <option value="Sospol">Sospol</option>
+            <option value="Hukum">Hukum</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+        </select> <br><br>
+        </fieldset><br>
+        
+        <button type="submit">kirim</button><br><br>
+        <button type="reset">reset</button>
+    </div>
+    </form>
+</body>
+</html>
